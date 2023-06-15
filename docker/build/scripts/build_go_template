@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -buildvcs=false -ldflags='-s -X main.buildTime=<1> -X main.version=<2>' -o /bin/<3> <4>
